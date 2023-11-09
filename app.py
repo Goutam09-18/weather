@@ -18,6 +18,6 @@ def get_weatherdata():
     response=requests.get(url, params=param)
     data = response.json()
     return f"data : {data}"
-
+ 
 if __name__ == '__main__':
     app.run(host = "0.0.0.0" , port=5002)
